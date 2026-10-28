@@ -7,6 +7,7 @@
 #include <cmath>
 #include <map>
 #include <string>
+#include <sstream>
 
 
 // よく分かってない：
@@ -29,7 +30,7 @@ class BitcoinExchange
 		BitcoinExchange &operator=(const BitcoinExchange &other);
 
 		
-		void processInputfile(const std::string &filename) const;
+		void processInputFile(const std::string &filename) const;
 };
 
 
