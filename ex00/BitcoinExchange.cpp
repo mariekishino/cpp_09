@@ -32,11 +32,13 @@ BitcoinExchange &BitcoinExchange::operator=(const BitcoinExchange &other)
 // Load database 
 void BitcoinExchange::loadDatabase(const std::string &filename)
 {
-
+	(void)filename;
 }
 
 double BitcoinExchange::findRate(const std::string &date) const
 {
+	(void)date;
+	return 1.0;
 
 }
 
@@ -181,7 +183,7 @@ void BitcoinExchange::processInputFile(const std::string &filename) const
 		{
 			double rate = findRate(date);
 
-			std::cout << date << "=> "
+			std::cout << date << " => "
 					  << value << " = "
 					  << value * rate << std::endl;
 		}
